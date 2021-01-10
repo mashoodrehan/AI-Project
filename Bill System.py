@@ -450,3 +450,42 @@ txtPudding = Entry(Left_C,font=('calibri',15),bd=7,width=6,justify=LEFT,state = 
 txtPudding.grid(row=6,column=1)
 txtPastry = Entry(Left_C,font=('calibri',15),bd=7,width=6,justify=LEFT,state = DISABLED,textvariable=E_Pastry)
 txtPastry.grid(row=7,column=1)
+#============================================================Total Cost==================================================================#
+lblCostofLeft = Label(Cost_F,font=('times',14,"bold italic"),text="Cost Of List1\t ",bg='#312113', fg='#FFD700')
+lblCostofLeft.grid(row=0,column=0,sticky=W)
+txtCostofLeft = Entry(Cost_F,font=('times',14),textvariable=CostofDrinks,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtCostofLeft.grid(row=0,column=1)
+txtCostofLeft.configure(state = DISABLED)
+
+lblCostofRight = Label(Cost_F,font=('times',14,"bold italic"),text="Cost Of List2 ",bg='#312113', fg='#FFD700')
+lblCostofRight.grid(row=1,column=0,sticky=W)
+txtCostofRight = Entry(Cost_F,font=('times',14),textvariable=CostofCakes,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtCostofRight.grid(row=1,column=1)
+txtCostofRight.configure(state = DISABLED)
+
+lblServiceCharge = Label(Cost_F,font=('times',14,"bold italic"),text="Service Charge ",bg='#312113', fg='#FFD700')
+lblServiceCharge.grid(row=2,column=0,sticky=W)
+txtServiceCharge = Entry(Cost_F,font=('times',14),textvariable=ServiceCharge,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtServiceCharge.grid(row=2,column=1)
+txtServiceCharge.configure(state = DISABLED)
+
+lblPaidTax = Label(Cost_F,font=('times',14,"bold italic"),text="Paid Tax",bg='#312113', fg='#FFD700')
+lblPaidTax.grid(row=0,column=2,sticky=W)
+txtPaidTax = Entry(Cost_F,font=('times',14),textvariable=PaidTax,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtPaidTax.grid(row=0,column=3)
+txtPaidTax.configure(state = DISABLED)
+
+lblSubTotal = Label(Cost_F,font=('times',14,"bold italic"),text="Sub Total",bg='#312113', fg='#FFD700')
+lblSubTotal.grid(row=1,column=2,sticky=W)
+txtSubTotal = Entry(Cost_F,font=('times',14),textvariable=SubTotal,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtSubTotal.grid(row=1,column=3)
+txtSubTotal.configure(state = DISABLED)
+
+lblTotalCost = Label(Cost_F,font=('times',14,"bold italic"),text="Total Cost",bg='#312113', fg='#FFD700')
+lblTotalCost.grid(row=2,column=2,sticky=W)
+txtTotalCost = Entry(Cost_F,font=('times',14),textvariable=TotalCost,bd=7,bg="white",insertwidth=2,justify=RIGHT)
+txtTotalCost.grid(row=2,column=3)
+txtTotalCost.configure(state = DISABLED)
+#==============================================================RECEIPT===================================================================#
+txtReceipt = Text(Receipt_F, width=46,height=12,bg="white",bd=4,font=('times',13))
+txtReceipt.grid(row=0,column=0)
