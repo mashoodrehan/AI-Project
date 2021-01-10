@@ -489,3 +489,49 @@ txtTotalCost.configure(state = DISABLED)
 #==============================================================RECEIPT===================================================================#
 txtReceipt = Text(Receipt_F, width=46,height=12,bg="white",bd=4,font=('times',13))
 txtReceipt.grid(row=0,column=0)
+#==============================================================BUTTONS====================================================================#
+btnTotal = Button(Buttons_F,padx=15,pady=1,fg="#FFD700",font=('times',15,'bold'),width=4,text="Total",bg="#81613C",command = CostofItem).grid(row=0,column=0)
+btnReceipt = Button(Buttons_F,padx=15,pady=1,fg="#FFD700",font=('times',15,'bold'),width=4,text="Receipt",bg="#81613C",command = Receipt).grid(row=0,column=1)
+btnReset = Button(Buttons_F,padx=15,pady=1,fg="#FFD700",font=('times',15,'bold'),width=4,text="Reset",bg="#81613C",command=Reset).grid(row=0,column=2)
+btnExit = Button(Buttons_F,padx=15,pady=1,fg="#FFD700",font=('times',15,'bold'),width=4,text="Exit",bg="#81613C",command=iExit).grid(row=0,column=3)
+#============================================================CALCULATOR DISPLAY===========================================================#
+def btnClick(numbers):
+    global operator
+    operator = operator + str(numbers)
+    text_Input.set(operator)
+def btnClear():
+    global operator
+    operator=""
+    text_Input.set("")
+def btnEquals():
+    global operator
+    sumup = str(eval(operator))
+    text_Input.set(sumup)
+    operator = ""
+    
+txtDisplay = Entry(Cal_F, width=45,bg="white",bd=4,font=('Vrinda',12,'bold'),textvariable=text_Input,justify=RIGHT)
+txtDisplay.grid(row=0,column=0,columnspan=4,pady=1)
+txtDisplay.insert(0,"0")
+txtDisplay.configure(state = DISABLED)
+#========================================================================Calculator Buttons=========================================================================#
+btn7=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="7", bg="#81613C",command=lambda:btnClick(7)).grid(row=2,column=0)
+btn8=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="8", bg="#81613C",command=lambda:btnClick(8)).grid(row=2,column=1)
+btn9=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="9", bg="#81613C",command=lambda:btnClick(9)).grid(row=2,column=2)
+btnAddition=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="+", bg="#654321",command=lambda:btnClick("+")).grid(row=2,column=3)
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+btn4=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="4", bg="#81613C",command=lambda:btnClick(4)).grid(row=3,column=0)
+btn5=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="5", bg="#81613C",command=lambda:btnClick(5)).grid(row=3,column=1)
+btn6=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="6", bg="#81613C",command=lambda:btnClick(6)).grid(row=3,column=2)
+btnSubstraction=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="-", bg="#654321",command=lambda:btnClick("-")).grid(row=3,column=3)
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+btn1=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="1", bg="#81613C",command=lambda:btnClick(1)).grid(row=4,column=0)
+btn2=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="2", bg="#81613C",command=lambda:btnClick(2)).grid(row=4,column=1)
+btn3=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="3", bg="#81613C",command=lambda:btnClick(3)).grid(row=4,column=2)
+btnMultiply=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="x", bg="#654321",command=lambda:btnClick("*")).grid(row=4,column=3)
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+btn0=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="0", bg="#81613C",command=lambda:btnClick(0)).grid(row=5,column=0)
+btnClear=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="C", bg="#654321",command=btnClear).grid(row=5,column=1)
+btnEquals=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="=", bg="#654321",command=btnEquals).grid(row=5,column=2)
+btnDivision=Button(Cal_F,padx=16, pady=1,fg="#FFD700", font=('times',19,'bold'),width=4,text="/", bg="#654321",command=lambda:btnClick("/")).grid(row=5,column=3)
+#=============================================================================================================================================================================#
+root.mainloop()
