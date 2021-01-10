@@ -370,3 +370,30 @@ def chChips():
     elif(var11.get() == 0):
         txtChips.configure(state=DISABLED)
         E_Chips.set("0")
+def chRusk():
+    if (var13.get() == 1):
+        txtRusk.configure(state=NORMAL)
+        txtRusk.focus()
+        txtRusk.delete('0',END)
+        E_Rusk.set("")
+    elif(var13.get() == 0):
+        txtRusk.configure(state=DISABLED)
+        E_Rusk.set("0")
+def chC_Drinks():
+    if (var10.get() == 1):
+        txtC_Drinks.configure(state=NORMAL)
+        txtC_Drinks.focus()
+        txtC_Drinks.delete('0',END)
+        E_C_Drinks.set("")
+    elif(var10.get() == 0):
+        txtC_Drinks.configure(state=DISABLED)
+        E_C_Drinks.set("0")
+def chNankhatai():
+    if (var9.get() == 1):
+        txtNankhatai.configure(state=NORMAL)
+        txtNankhatai.focus()
+        txtNankhatai.delete('0',END)
+        E_Nankhatai.set("")
+    elif(var9.get() == 0):
+        txtNankhatai.configure(state=DISABLED)
+        E_Nankhatai.set("0")
