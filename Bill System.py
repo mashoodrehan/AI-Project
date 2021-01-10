@@ -289,4 +289,31 @@ def chM_Cake():
     elif(var7.get() == 0):
         txtM_Cake.configure(state=DISABLED)
         E_M_Cake.set("0")
+def chBarfi():
+    if (var8.get() == 1):
+        txtBarfi.configure(state=NORMAL)
+        txtBarfi.focus()
+        txtBarfi.delete('0',END)
+        E_Barfi.set("")
+    elif(var8.get() == 0):
+        txtBarfi.configure(state=DISABLED)
+        E_Barfi.set("0")
+def chG_Halwa():
+    if (var4.get() == 1):
+        txtG_Halwa.configure(state=NORMAL)
+        txtG_Halwa.focus()
+        txtG_Halwa.delete('0',END)
+        E_G_Halwa.set("")
+    elif(var4.get() == 0):
+        txtG_Halwa.configure(state=DISABLED)
+        E_G_Halwa.set("0")
+def chBrownies():
+    if (var5.get() == 1):
+        txtBrownies.configure(state=NORMAL)
+        txtBrownies.focus()
+        txtBrownies.delete('0',END)
+        E_Brownies.set("")
+    elif(var5.get() == 0):
+        txtBrownies.configure(state=DISABLED)
+        E_Brownies.set("0")
 
