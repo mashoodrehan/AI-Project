@@ -397,3 +397,12 @@ def chNankhatai():
     elif(var9.get() == 0):
         txtNankhatai.configure(state=DISABLED)
         E_Nankhatai.set("0")
+#=========================================================LEFT MENU=======================================================================#
+Doughnuts=Checkbutton(Right_C,text="Doughnuts",variable=var1,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chDoughnuts).grid(row=0,sticky=W)
+Sandwich=Checkbutton(Right_C,text="Sandwich",variable=var2,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chSandwich).grid(row=1,sticky=W)
+Pie=Checkbutton(Right_C,text="Pie",variable=var3,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chPie).grid(row=2,sticky=W)
+G_Halwa=Checkbutton(Right_C,text="Gajar Halwa",variable=var4,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chG_Halwa).grid(row=3,sticky=W)
+Brownies=Checkbutton(Right_C,text="Brownies",variable=var5,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chBrownies).grid(row=4,sticky=W)
+Bread=Checkbutton(Right_C,text="Bread",variable=var6,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chBread).grid(row=5,sticky=W)
+M_Cake=Checkbutton(Right_C,text="Milk Cake",variable=var7,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chM_Cake).grid(row=6,sticky=W)
+Barfi=Checkbutton(Right_C,text="Barfi",variable=var8,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chBarfi).grid(row=7,sticky=W)
