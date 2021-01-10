@@ -29,3 +29,21 @@ Buttons_F.pack(side=BOTTOM)
 Cal_F=Frame(ReceiptCal_F,bg='#312113',bd=6,relief=RIDGE)
 Cal_F.pack(side=BOTTOM)
 
+Receipt_F=Frame(ReceiptCal_F,bg='#312113',bd=4,relief=RIDGE)
+Receipt_F.pack(side=TOP)
+
+MenuFrame = Frame(root,bg='#312113',bd=5,pady=5,relief=GROOVE)
+MenuFrame.pack(side=LEFT)
+
+Cost_F=Frame(MenuFrame,bg='#312113',bd=4, relief=FLAT)
+Cost_F.pack(side=BOTTOM)
+
+Right_C=Frame(MenuFrame,bg='#312113',bd=10, relief=FLAT)
+Right_C.pack(side=TOP)
+
+Right_C=Frame(MenuFrame,bg='#312113',bd=10,width=300,height=400,relief=FLAT)
+Right_C.pack(side=LEFT)
+
+Left_C=Frame(MenuFrame,bg='#312113',bd=10,relief=FLAT)
+Left_C.pack(side=RIGHT)
+
