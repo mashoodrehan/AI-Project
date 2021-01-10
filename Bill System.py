@@ -252,3 +252,22 @@ E_Pudding.set("0")
 E_Pastry.set("0")
 
 DateofOrder.set(time.strftime("%d/%m/%Y"))
+#======================================================================================================================================#
+def chDoughnuts():
+    if (var1.get() == 1):
+        txtDoughnuts.configure(state=NORMAL)
+        txtDoughnuts.focus()
+        txtDoughnuts.delete('0',END)
+        E_Doughnuts.set("")
+    elif(var1.get() == 0):
+        txtDoughnuts.configure(state=DISABLED)
+        E_Doughnuts.set("0")
+def chSandwich():
+    if (var2.get() == 1):
+        txtSandwich.configure(state=NORMAL)
+        txtSandwich.focus()
+        txtSandwich.delete('0',END)
+        E_Sandwich.set("")
+    elif(var2.get() == 0):
+        txtSandwich.configure(state=DISABLED)
+        E_Sandwich.set("0")
