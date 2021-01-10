@@ -316,4 +316,30 @@ def chBrownies():
     elif(var5.get() == 0):
         txtBrownies.configure(state=DISABLED)
         E_Brownies.set("0")
-
+def chBread():
+    if (var6.get() == 1):
+        txtBread.configure(state=NORMAL)
+        txtBread.focus()
+        txtBread.delete('0',END)
+        E_Bread.set("")
+    elif(var6.get() == 0):
+        txtBread.configure(state=DISABLED)
+        E_Bread.set("0")
+def chPastry():
+    if (var16.get() == 1):
+        txtPastry.configure(state=NORMAL)
+        txtPastry.focus()
+        txtPastry.delete('0',END)
+        E_Pastry.set("")
+    elif(var16.get() == 0):
+        txtPastry.configure(state=DISABLED)
+        E_Pastry.set("0")
+def chPudding():
+    if (var15.get() == 1):
+        txtPudding.configure(state=NORMAL)
+        txtPudding.focus()
+        txtPudding.delete('0',END)
+        E_Pudding.set("")
+    elif(var15.get() == 0):
+        txtPudding.configure(state=DISABLED)
+        E_Pudding.set("0")
