@@ -271,3 +271,22 @@ def chSandwich():
     elif(var2.get() == 0):
         txtSandwich.configure(state=DISABLED)
         E_Sandwich.set("0")
+def chPie():
+    if (var3.get() == 1):
+        txtPie.configure(state=NORMAL)
+        txtPie.focus()
+        txtPie.delete('0',END)
+        E_Pie.set("")
+    elif(var3.get() == 0):
+        txtPie.configure(state=DISABLED)
+        E_Pie.set("0")
+def chM_Cake():
+    if (var7.get() == 1):
+        txtM_Cake.configure(state=NORMAL)
+        txtM_Cake.focus()
+        txtM_Cake.delete('0',END)
+        E_M_Cake.set("")
+    elif(var7.get() == 0):
+        txtM_Cake.configure(state=DISABLED)
+        E_M_Cake.set("0")
+
