@@ -115,3 +115,44 @@ def Reset():
     txtPudding.configure(state = DISABLED)
     txtPastry.configure(state = DISABLED)
 
+def CostofItem():
+    Item1=float(E_Doughnuts.get())
+    Item2=float(E_Sandwich.get())
+    Item3=float(E_Pie.get())
+    Item4=float(E_G_Halwa.get())
+    Item5=float(E_Brownies.get())
+    Item6=float(E_Bread.get())
+    Item7=float(E_M_Cake.get())
+    Item8=float(E_Barfi.get())
+    Item9=float(E_Nankhatai.get())
+    Item10=float(E_C_Drinks.get())
+    Item11=float(E_Chips.get())
+    Item12=float(E_Nimco.get())
+    Item13=float(E_Rusk.get())
+    Item14=float(E_Rabri.get())
+    Item15=float(E_Pudding.get())
+    Item16=float(E_Pastry.get())
+
+    CostofLine1 = (Item1*150) + (Item2*70) + (Item3*200) + (Item4*450) + (Item5*30)+ (Item6*50) + (Item7*850) + (Item8*660)
+    CostofLine2 = (Item9*350) + (Item10*60) + (Item11*70) + (Item12*120) + (Item13*60) + (Item14*550) + (Item15*400) + (Item16*80)
+
+    TotalC = CostofLine1 + CostofLine2
+    ServiceC = 0
+    PTax = (TotalC)*0.03
+    STotal = TotalC + ServiceC + PTax
+    TTotal = STotal
+
+    Line1Price = "Rs.",str('%.2f'%(CostofLine1))
+    Line2Price = "Rs.",str('%.2f'%(CostofLine2))
+    CostofCakes.set(Line2Price)
+    CostofDrinks.set(Line1Price)
+    SC = "Rs.", str('%.2f'%(ServiceC))
+    ServiceCharge.set(SC)
+
+    SubTotalofITEMS = "Rs.",str('%.2f'%(STotal))
+    SubTotal.set(SubTotalofITEMS)
+
+    Tax = "Rs.",str('%.2f'%(PTax))
+    PaidTax.set(Tax)
+    TC = "Rs.",str('%.2f'%(TTotal))
+    TotalCost.set(TC)
