@@ -424,3 +424,12 @@ txtM_Cake.grid(row=6,column=1)
 txtBarfi = Entry(Right_C,font=('calibri',15),bd=7,width=6,justify=LEFT,state = DISABLED,textvariable=E_Barfi)
 
 txtBarfi.grid(row=7,column=1)
+#===============================================================RIGHT MENU===================================================================#
+Nankhatai=Checkbutton(Left_C,text="Nankhatai",variable=var9,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chNankhatai).grid(row=0,sticky=W)
+C_Drinks=Checkbutton(Left_C,text="Cold Drinks",variable=var10,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chC_Drinks).grid(row=1,sticky=W)
+Chips=Checkbutton(Left_C,text="Chips",variable=var11,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chChips).grid(row=2,sticky=W)
+Nimco=Checkbutton(Left_C,text="Nimco",variable=var12,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chNimco).grid(row=3,sticky=W)
+Rusk=Checkbutton(Left_C,text="Rusk",variable=var13,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chRusk).grid(row=4,sticky=W)
+Rabri=Checkbutton(Left_C,text="Rabri",variable=var14,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chRabri).grid(row=5,sticky=W)
+Pudding=Checkbutton(Left_C,text="Pudding",variable=var15,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chPudding).grid(row=6,sticky=W)
+Pastry=Checkbutton(Left_C,text="Pastry",variable=var16,onvalue=1,offvalue=0, font=('times',18,"bold italic"),bg='#312113', fg='#FFD700',command = chPastry).grid(row=7,sticky=W)
