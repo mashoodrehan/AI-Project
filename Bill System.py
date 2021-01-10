@@ -47,3 +47,10 @@ Right_C.pack(side=LEFT)
 Left_C=Frame(MenuFrame,bg='#312113',bd=10,relief=FLAT)
 Left_C.pack(side=RIGHT)
 
+#=====================================================================================================================================#
+def iExit():
+    iExit = tkinter.messagebox.askyesno("Exit","Confirm you want to exit")
+    if iExit>0:
+        root.destroy()
+        return
+
