@@ -156,3 +156,4 @@ def CostofItem():
     PaidTax.set(Tax)
     TC = "Rs.",str('%.2f'%(TTotal))
     TotalCost.set(TC)
+
