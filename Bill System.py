@@ -54,3 +54,29 @@ def iExit():
         root.destroy()
         return
 
+def Reset():
+    PaidTax.set("")
+    SubTotal.set("")
+    TotalCost.set("")
+    CostofCakes.set("")
+    CostofDrinks.set("")
+    ServiceCharge.set("")
+    txtReceipt.delete("1.0",END)
+    
+    E_Doughnuts.set("0")
+    E_Sandwich.set("0")
+    E_Pie.set("0")
+    E_G_Halwa.set("0")
+    E_Brownies.set("0")
+    E_Bread.set("0")
+    E_M_Cake.set("0")
+    E_Barfi.set("0")
+
+    E_Nankhatai.set("0")
+    E_C_Drinks.set("0")
+    E_Chips.set("0")
+    E_Nimco.set("0")
+    E_Rusk.set("0")
+    E_Rabri.set("0")
+    E_Pudding.set("0")
+    E_Pastry.set("0")
