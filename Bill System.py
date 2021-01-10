@@ -343,3 +343,30 @@ def chPudding():
     elif(var15.get() == 0):
         txtPudding.configure(state=DISABLED)
         E_Pudding.set("0")
+def chRabri():
+    if (var14.get() == 1):
+        txtRabri.configure(state=NORMAL)
+        txtRabri.focus()
+        txtRabri.delete('0',END)
+        E_Rabri.set("")
+    elif(var14.get() == 0):
+        txtRabri.configure(state=DISABLED)
+        E_Rabri.set("0")
+def chNimco():
+    if (var12.get() == 1):
+        txtNimco.configure(state=NORMAL)
+        txtNimco.focus()
+        txtNimco.delete('0',END)
+        E_Nimco.set("")
+    elif(var12.get() == 0):
+        txtNimco.configure(state=DISABLED)
+        E_Nimco.set("0")
+def chChips():
+    if (var11.get() == 1):
+        txtChips.configure(state=NORMAL)
+        txtChips.focus()
+        txtChips.delete('0',END)
+        E_Chips.set("")
+    elif(var11.get() == 0):
+        txtChips.configure(state=DISABLED)
+        E_Chips.set("0")
